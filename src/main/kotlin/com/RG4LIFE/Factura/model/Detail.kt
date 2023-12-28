@@ -1,6 +1,7 @@
 package com.RG4LIFE.Factura.model
 
 import jakarta.persistence.*
+import java.math.BigDecimal
 import java.sql.Time
 
 @Entity
@@ -10,10 +11,11 @@ class Detail{
     @Id
     @Column(updatable = false)
     var id: Long? = null
-    var quantily: Long? = null
-    var price: String? = null
+    var quantity: Int = 0
+    var price: BigDecimal? = null
     @Column(name = "invoice_id")
-    var invoiceId: Time? = null
+    var invoiceId: Long? = null
     @Column(name = "product_id")
     var productId:Long?=null
 }
+

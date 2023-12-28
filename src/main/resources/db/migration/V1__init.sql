@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS client (
     id SERIAL PRIMARY KEY,
     niu VARCHAR(255) UNIQUE,
-    fullname VARCHAR(255),
+    fullname VARCHAR(255) NOT NULL,
     address VARCHAR(255)
     );
 
