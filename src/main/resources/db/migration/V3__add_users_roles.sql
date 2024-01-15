@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS role (
     id SERIAL,
     role VARCHAR(25) NOT NULL,
     user_id INTEGER NOT NULL,
-    UNIQUE (role, users_id),
+    UNIQUE (role, user_id),
     PRIMARY KEY (id),
-    FOREIGN KEY (users_id) REFERENCES users (id)
+    FOREIGN KEY (user_id) REFERENCES users (id)
     );
