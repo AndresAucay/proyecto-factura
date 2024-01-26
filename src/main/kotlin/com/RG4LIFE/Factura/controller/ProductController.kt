@@ -1,7 +1,7 @@
 package com.RG4LIFE.Factura.controller
 
 import com.RG4LIFE.Factura.model.Product
-import com.RG4LIFE.Factura.service.ClientService
+
 import com.RG4LIFE.Factura.service.ProductService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.data.domain.Pageable
