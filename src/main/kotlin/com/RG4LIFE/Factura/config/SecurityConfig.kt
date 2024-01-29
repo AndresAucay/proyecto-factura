@@ -36,7 +36,7 @@ class SecurityConfig {
                     //metodo Get, post , patch, put, delete
                     .requestMatchers(HttpMethod.GET,"/product-app/**", "/client-app/**", "/detail-app/**")
                     .hasAnyRole("admin", "inventory")
-                    .requestMatchers(HttpMethod.POST,"/product-app/**", "/client-app")
+                    .requestMatchers(HttpMethod.POST,"/product-app/**", "/client-app/**", "/detail-app/**")
                     .hasAnyRole("admin")
 
                     //el de inventario
